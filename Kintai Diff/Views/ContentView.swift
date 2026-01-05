@@ -34,16 +34,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-extension Date {
-    func toFormattedDayString() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EE d"
-        return formatter.string(from: self)
-    }
-    func toFormattedHourMinuteString() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm"
-        return formatter.string(from: self)
-    }
-}

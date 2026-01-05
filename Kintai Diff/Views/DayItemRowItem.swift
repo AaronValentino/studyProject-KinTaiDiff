@@ -2,8 +2,6 @@
 //  DayItemRowItem.swift
 //  Kintai Diff
 //
-//  Created by アーロンヴァレンティノ on 2025/08/04.
-//
 
 import SwiftUI
 
@@ -13,8 +11,8 @@ struct DayItemRowItem: View {
     var body: some View {
         VStack(alignment: entry.type == .hibihou ? .trailing : .leading) {
             Text(String(entry.type.rawValue))
-            let startedAt = entry.startedAt.toFormattedHourMinuteString()
-            let endedAt = entry.endedAt.toFormattedHourMinuteString()
+            let startedAt = entry.startedAt.formatted(.hourMinute)
+            let endedAt = entry.endedAt.formatted(.hourMinute)
             Text(String("\(startedAt) ~ \(endedAt)"))
 
             let totalDuration = calculateTimeDifference(

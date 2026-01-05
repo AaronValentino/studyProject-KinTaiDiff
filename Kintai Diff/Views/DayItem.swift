@@ -2,8 +2,6 @@
 //  DayItem.swift
 //  Kintai Diff
 //
-//  Created by アーロンヴァレンティノ on 2025/08/04.
-//
 
 import SwiftUI
 
@@ -15,7 +13,7 @@ struct DayItem: View {
         ForEach(entries) { entry in
             VStack {
                 HStack {
-                    Text("\(entry.date.toFormattedDayString())")
+                    Text(entry.date.formatted(.dayDate))
                         .font(.body)
                         .fontWeight(.bold)
                     Spacer()
