@@ -2,8 +2,6 @@
 //  Kintai_DiffUITests.swift
 //  Kintai DiffUITests
 //
-//  Created by アーロンヴァレンティノ on 2025/08/04.
-//
 
 import XCTest
 
