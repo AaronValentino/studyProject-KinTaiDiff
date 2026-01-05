@@ -2,8 +2,6 @@
 //  NativeKintaiHTMLParser.swift
 //  Kintai Diff
 //
-//  Created by アーロンヴァレンティノ on 2025/08/04.
-//
 
 import Foundation
 
@@ -81,7 +79,7 @@ class NativeKintaiHTMLParser {
             type: type,
             startedAt: startTime,
             endedAt: endTime,
-            totalDurationInMinutes: totalDuration,
+            totalWorkDurationMinutes: totalWorkDuration,
             details: details
         )
     }
