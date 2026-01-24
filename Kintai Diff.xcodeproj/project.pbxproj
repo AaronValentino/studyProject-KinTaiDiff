@@ -29,9 +29,22 @@
 		25C26A692E405EF50093EB95 /* Kintai DiffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kintai DiffUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		25E4D3652F0B90A700271B31 /* Exceptions for "Kintai Diff" folder in "Kintai Diff" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Kintai-Diff-Info.plist",
+			);
+			target = 25C26A4F2E405EF30093EB95 /* Kintai Diff */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		25C26A522E405EF30093EB95 /* Kintai Diff */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				25E4D3652F0B90A700271B31 /* Exceptions for "Kintai Diff" folder in "Kintai Diff" target */,
+			);
 			path = "Kintai Diff";
 			sourceTree = "<group>";
 		};
@@ -398,6 +411,7 @@
 				DEVELOPMENT_TEAM = LV4VN4LG96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kintai-Diff-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -429,6 +443,7 @@
 				DEVELOPMENT_TEAM = LV4VN4LG96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kintai-Diff-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

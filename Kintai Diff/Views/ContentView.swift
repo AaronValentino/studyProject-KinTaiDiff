@@ -2,28 +2,17 @@
 //  ContentView.swift
 //  Kintai Diff
 //
-//  Created by アーロンヴァレンティノ on 2025/08/04.
-//
 
-import NaturalLanguage
-import SwiftData
 import SwiftUI
 
 struct ContentView: View {
     @State private var viewModel: ViewModel = .init()
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                Section(header: Text(String("問題あり")).textCase(.none)) {
-                    DayItem(entries: viewModel.invalidEntries, isError: true)
-                }
-                Section(header: Text(String("問題なし")).textCase(.none)) {
-                    DayItem(entries: viewModel.validEntries, isError: false)
-                }
+        List {
+            ForEach(viewModel.entries) { entry in
+                DayItem(entry: entry)
             }
-        } detail: {
-            Text("Select an item")
         }
         .task {
             viewModel.parseEntries()
